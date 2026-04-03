@@ -54,6 +54,17 @@ function loadNominados() {
   nominadosData.forEach(nom => {
     const card = document.createElement("div");
     card.classList.add("card");
+    
+    
+    // ORDENAR ALFABÉTICAMENTE
+  const ordenados = [...nominadosData].sort((a, b) =>
+    a.nombre.localeCompare(b.nombre, 'es', { sensitivity: 'base' })
+  );
+
+  ordenados.forEach(nom => {
+    const card = document.createElement("div");
+    card.classList.add("card");
+
 
     card.innerHTML = `
   <img src="${nom.imagen}" class="card-img">
@@ -72,4 +83,3 @@ function loadNominados() {
     container.appendChild(card);
   });
 }
-
