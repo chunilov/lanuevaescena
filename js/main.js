@@ -51,12 +51,10 @@ const nominadosData = [
 function loadNominados() {
   const container = document.getElementById("nominados-grid");
 
-  nominadosData.forEach(nom => {
-    const card = document.createElement("div");
-    card.classList.add("card");
-    
-    
-    // ORDENAR ALFABÉTICAMENTE
+  // Limpiar por si recarga
+  container.innerHTML = "";
+
+  // ORDENAR ALFABÉTICAMENTE
   const ordenados = [...nominadosData].sort((a, b) =>
     a.nombre.localeCompare(b.nombre, 'es', { sensitivity: 'base' })
   );
@@ -65,20 +63,19 @@ function loadNominados() {
     const card = document.createElement("div");
     card.classList.add("card");
 
-
     card.innerHTML = `
-  <img src="${nom.imagen}" class="card-img">
+      <img src="${nom.imagen}" class="card-img">
 
-  <div class="card-content">
-    <h4>${nom.nombre}</h4>
-    <p>${nom.descripcion}</p>
+      <div class="card-content">
+        <h4>${nom.nombre}</h4>
+        <p>${nom.descripcion}</p>
 
-    <div class="card-buttons">
-      <a href="${nom.canal}" target="_blank" class="btn secondary">Ver canal</a>
-      <button class="btn">Votar</button>
-    </div>
-  </div>
-`;
+        <div class="card-buttons">
+          <a href="${nom.canal}" target="_blank" class="btn secondary">Ver canal</a>
+          <button class="btn">Votar</button>
+        </div>
+      </div>
+    `;
 
     container.appendChild(card);
   });

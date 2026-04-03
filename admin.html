@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de Nominados</title>
+</head>
+<body>
+
+<h2>Agregar Nominado</h2>
+
+<form id="form">
+  <input type="text" id="nombre" placeholder="Nombre" required><br><br>
+  <input type="text" id="descripcion" placeholder="Descripción" required><br><br>
+  <input type="text" id="imagen" placeholder="Ruta imagen (imagenes/...)" required><br><br>
+  <input type="text" id="canal" placeholder="Link canal" required><br><br>
+  <input type="text" id="categoria" placeholder="Categoría" required><br><br>
+
+  <button type="submit">Generar</button>
+</form>
+
+<h3>Resultado:</h3>
+<pre id="output"></pre>
+
+<script>
+document.getElementById("form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const data = {
+    nombre: document.getElementById("nombre").value,
+    descripcion: document.getElementById("descripcion").value,
+    imagen: document.getElementById("imagen").value,
+    canal: document.getElementById("canal").value,
+    categoria: document.getElementById("categoria").value
+  };
+
+  const output = `
+{
+  nombre: "${data.nombre}",
+  descripcion: "${data.descripcion}",
+  imagen: "${data.imagen}",
+  canal: "${data.canal}",
+  categoria: "${data.categoria}"
+},
+`;
+
+  document.getElementById("output").textContent = output;
+});
+</script>
+
+</body>
+</html>
