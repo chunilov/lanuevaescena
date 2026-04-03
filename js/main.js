@@ -33,7 +33,7 @@ const nominadosData = [
   {
     nombre: "Elbasurero",
     descripcion: "Contenido variado con gran comunidad",
-    imagen: "imagenes/elbasurero-logo.png",
+    imagen: "imagenes/elbasurero-logo.jpg",
     canal: "https://www.twitch.tv/elbasurerochido"
   },
   {
