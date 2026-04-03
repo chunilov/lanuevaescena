@@ -44,12 +44,18 @@ function loadNominados() {
     card.classList.add("card");
 
     card.innerHTML = `
-      <img src="${nom.imagen}" class="card-img">
-      <h4>${nom.nombre}</h4>
-      <p>${nom.descripcion}</p>
+  <img src="${nom.imagen}" class="card-img">
+
+  <div class="card-content">
+    <h4>${nom.nombre}</h4>
+    <p>${nom.descripcion}</p>
+
+    <div class="card-buttons">
       <a href="${nom.canal}" target="_blank" class="btn secondary">Ver canal</a>
       <button class="btn">Votar</button>
-    `;
+    </div>
+  </div>
+`;
 
     container.appendChild(card);
   });
