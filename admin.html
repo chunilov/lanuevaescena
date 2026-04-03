@@ -2,33 +2,122 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Panel de Nominados</title>
+  <title>Admin - La Nueva Escena</title>
+
+  <style>
+    body {
+      background: #0a0a0f;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 500px;
+      background: #111;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(138,43,226,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #8a2be2;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: none;
+      border-radius: 6px;
+      background: #1a1a22;
+      color: #fff;
+    }
+
+    input[type="file"] {
+      padding: 8px;
+      background: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #8a2be2;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #a855f7;
+    }
+
+    pre {
+      background: #000;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 8px;
+      font-size: 13px;
+      overflow-x: auto;
+    }
+
+    .copy-btn {
+      background: transparent;
+      border: 1px solid #8a2be2;
+    }
+
+    .copy-btn:hover {
+      background: #8a2be2;
+    }
+  </style>
 </head>
 <body>
 
-<h2>Agregar Nominado</h2>
+<div class="container">
+  <h2>Agregar Nominado</h2>
 
-<form id="form">
-  <input type="text" id="nombre" placeholder="Nombre" required><br><br>
-  <input type="text" id="descripcion" placeholder="Descripción" required><br><br>
-  <input type="text" id="imagen" placeholder="Ruta imagen (imagenes/...)" required><br><br>
-  <input type="text" id="canal" placeholder="Link canal" required><br><br>
-  <input type="text" id="categoria" placeholder="Categoría" required><br><br>
+  <form id="form">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="text" id="descripcion" placeholder="Descripción" required>
 
-  <button type="submit">Generar</button>
-</form>
+    <input type="file" id="imagen" accept="image/*" required>
 
-<h3>Resultado:</h3>
-<pre id="output"></pre>
+    <input type="text" id="canal" placeholder="Link canal" required>
+    <input type="text" id="categoria" placeholder="Categoría" required>
+
+    <button type="submit">Generar JSON</button>
+  </form>
+
+  <pre id="output"></pre>
+  <button class="copy-btn" onclick="copiar()">Copiar</button>
+</div>
 
 <script>
 document.getElementById("form").addEventListener("submit", function(e) {
   e.preventDefault();
 
+  const fileInput = document.getElementById("imagen");
+  const file = fileInput.files[0];
+
+  if (!file) {
+    alert("Seleccioná una imagen");
+    return;
+  }
+
+  const nombreArchivo = file.name;
+
   const data = {
     nombre: document.getElementById("nombre").value,
     descripcion: document.getElementById("descripcion").value,
-    imagen: document.getElementById("imagen").value,
+    imagen: "imagenes/" + nombreArchivo,
     canal: document.getElementById("canal").value,
     categoria: document.getElementById("categoria").value
   };
@@ -45,6 +134,12 @@ document.getElementById("form").addEventListener("submit", function(e) {
 
   document.getElementById("output").textContent = output;
 });
+
+function copiar() {
+  const texto = document.getElementById("output").textContent;
+  navigator.clipboard.writeText(texto);
+  alert("Copiado al portapapeles");
+}
 </script>
 
 </body>
