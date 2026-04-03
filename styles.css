@@ -162,3 +162,126 @@
 .card-content p {
   min-height: 40px;
 }
+
+
+/* =============================
+   RESPONSIVE DESIGN
+============================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+  .hero-logo {
+    width: 280px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px 10px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .hero-logo {
+    width: 220px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-img {
+    aspect-ratio: 1 / 1;
+  }
+
+  .card-content {
+    padding: 12px;
+  }
+
+  .card-content h4 {
+    font-size: 16px;
+  }
+
+  .card-content p {
+    font-size: 13px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card-buttons {
+    gap: 6px;
+  }
+}
+
+
+/* Mobile chico */
+@media (max-width: 480px) {
+
+  .hero-logo {
+    width: 180px;
+  }
+
+  .hero h2 {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  .logo-small {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+}
