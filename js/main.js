@@ -19,16 +19,16 @@ loadComponent("footer", "components/footer.html");
 // =============================
 const nominadosData = [
   {
-    nombre: "Streamer 1",
+    nombre: "ix_Claris_xi",
     descripcion: "Contenido variado con gran comunidad",
-    imagen: "imagenes/streamer1.jpg",
-    canal: "https://twitch.tv/streamer1"
+    imagen: "imagenes/ix_claris_xi logo.webp",
+    canal: "https://www.twitch.tv/ix_claris_xi"
   },
   {
-    nombre: "Streamer 2",
+    nombre: "Eberdanza",
     descripcion: "Referente del under gaming",
-    imagen: "imagenes/streamer2.jpg",
-    canal: "https://youtube.com/streamer2"
+    imagen: "imagenes/eber-logo.png",
+    canal: "https://www.twitch.tv/eberdanza"
   }
 ];
 
