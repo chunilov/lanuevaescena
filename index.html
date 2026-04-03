@@ -1,4 +1,4 @@
-
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,14 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Nueva Escena 2027</title>
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">  
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-  <h1>La Nueva Escena</h1>
+  <h1 class="logo-small">La Nueva Escena</h1>
   <nav>
     <a href="#">Inicio</a>
     <a href="#categorias">Categorías</a>
@@ -23,9 +25,12 @@
 </header>
 
 <section class="hero">
-  <h2>Premios del Streaming Under 2027</h2>
-  <p>El evento que define la nueva generación de creadores</p>
-  <button class="btn">Próximamente</button>
+  <div class="hero-content">
+    <img src="logo.png" alt="La Nueva Escena" class="hero-logo">
+    <h2>Premios del Streaming Under 2027</h2>
+    <p>El evento que define la nueva generación de creadores</p>
+    <button class="btn">Próximamente</button>
+  </div>
 </section>
 
 <section id="categorias">
@@ -60,8 +65,4 @@
 
 <footer>
   <p>© 2027 La Nueva Escena</p>
-</footer>
-
-</body>
 </html>
-
