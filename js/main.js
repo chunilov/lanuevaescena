@@ -22,25 +22,29 @@ const nominadosData = [
     nombre: "ix_Claris_xi",
     descripcion: "Contenido variado con gran comunidad",
     imagen: "imagenes/ix_claris_xi-logo.webp",
-    canal: "https://www.twitch.tv/ix_claris_xi"
+    canal: "https://www.twitch.tv/ix_claris_xi",
+    categoria: "Mejor Comunidad"
   },
   {
     nombre: "Eberdanza",
     descripcion: "Referente del under gaming",
     imagen: "imagenes/eber-logo.png",
-    canal: "https://www.twitch.tv/eberdanza"
+    canal: "https://www.twitch.tv/eberdanza",
+    categoria: "Mejor Comunidad"
   },
   {
     nombre: "Elbasurero",
     descripcion: "Contenido variado con gran comunidad",
     imagen: "imagenes/elbasurero-logo.jpg",
-    canal: "https://www.twitch.tv/elbasurerochido"
+    canal: "https://www.twitch.tv/elbasurerochido",
+    categoria: "Mejor Comunidad"
   },
   {
     nombre: "Goikorol",
     descripcion: "Referente del under gaming",
     imagen: "imagenes/goikorol-logo.png",
-    canal: "https://www.twitch.tv/goikorol"
+    canal: "https://www.twitch.tv/goikorol",
+    categoria: "Mejor Comunidad"
   }
 ];
 
@@ -48,14 +52,19 @@ const nominadosData = [
 // =============================
 // GENERADOR DE TARJETAS
 // =============================
-function loadNominados() {
+function loadNominados(categoria = null) {
   const container = document.getElementById("nominados-grid");
-
-  // Limpiar por si recarga
   container.innerHTML = "";
 
-  // ORDENAR ALFABÉTICAMENTE
-  const ordenados = [...nominadosData].sort((a, b) =>
+  let lista = [...nominadosData];
+
+  // FILTRO POR CATEGORÍA
+  if (categoria) {
+    lista = lista.filter(n => n.categoria === categoria);
+  }
+
+  // ORDENAR
+  const ordenados = lista.sort((a, b) =>
     a.nombre.localeCompare(b.nombre, 'es', { sensitivity: 'base' })
   );
 
@@ -78,5 +87,23 @@ function loadNominados() {
     `;
 
     container.appendChild(card);
+  });
+}
+
+function activarCategorias() {
+  const categorias = document.querySelectorAll(".categoria");
+
+  categorias.forEach(cat => {
+    cat.addEventListener("click", () => {
+      const nombre = cat.dataset.cat;
+
+      // Filtrar nominados
+      loadNominados(nombre);
+
+      // Scroll automático a nominados
+      document.getElementById("nominados").scrollIntoView({
+        behavior: "smooth"
+      });
+    });
   });
 }
