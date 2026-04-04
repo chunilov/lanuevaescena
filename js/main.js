@@ -9,7 +9,7 @@ function loadComponent(id, file, callback) {
 
 loadComponent("header", "components/header.html");
 loadComponent("hero", "components/hero.html");
-loadComponent("categorias", "components/categorias.html");
+loadComponent("categorias", "components/categorias.html", activarCategorias);
 loadComponent("nominados", "components/nominados.html", loadNominados);
 loadComponent("votar", "components/votar.html");
 loadComponent("footer", "components/footer.html");
