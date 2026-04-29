@@ -96,17 +96,17 @@ const nominadosData = [
     categoria: "Streamer Nominado"
   },
   {
-    nombre: "Nombre",
+    nombre: "Lulistone12",
     descripcion: "Contenido variado con gran comunidad",
     imagen: "imagenes/streamer_logo.png",
-    canal: "Canal",
+    canal: "https://www.twitch.tv/lulistone12",
     categoria: "Streamer Nominado"
   },
   {
-    nombre: "Nombre",
+    nombre: "Millenialgeriatrica",
     descripcion: "Contenido variado con gran comunidad",
     imagen: "imagenes/streamer_logo.png",
-    canal: "Canal",
+    canal: "https://www.twitch.tv/millenialgeriatrica",
     categoria: "Streamer Nominado"
   },
   {
