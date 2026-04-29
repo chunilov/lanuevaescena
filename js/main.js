@@ -110,10 +110,10 @@ const nominadosData = [
     categoria: "Streamer Nominado"
   },
   {
-    nombre: "Nombre",
+    nombre: "LaPipyHouse",
     descripcion: "Contenido variado con gran comunidad",
     imagen: "imagenes/streamer_logo.png",
-    canal: "Canal",
+    canal: "https://www.twitch.tv/lapipyhouse",
     categoria: "Streamer Nominado"
   },
   {
