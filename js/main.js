@@ -155,7 +155,7 @@ const nominadosData = [
     nombre: "BambiATR",
     descripcion: "Contenido variado con gran comunidad",
     imagen: "imagenes/streamer_logo.png",
-    canal: "Canal",
+    canal: "https://www.twitch.tv/bambiatr",
     categoria: "Streamer Nominado"
   },
   {
