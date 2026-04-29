@@ -26,14 +26,14 @@ const nominadosData = [
     categoria: "Streamer Nominado"
   },
   {
-    nombre: "Eberdanza",
+    nombre: "Eber Danza",
     descripcion: "Referente del under gaming",
     imagen: "imagenes/eber-logo.png",
     canal: "https://www.twitch.tv/eberdanza",
     categoria: "Streamer Nominado"
   },
   {
-    nombre: "Elbasurero",
+    nombre: "El Basurero",
     descripcion: "Contenido variado con gran comunidad",
     imagen: "imagenes/elbasurero-logo.jpg",
     canal: "https://www.twitch.tv/elbasurerochido",
