@@ -285,3 +285,23 @@
   }
 
 }
+
+
+
+
+/* BUSCADOR */
+.busqueda-container {
+  padding: 20px;
+  text-align: center;
+}
+
+#inputBusqueda {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #1f1f1f;
+  color: white;
+  font-size: 14px;
+}
