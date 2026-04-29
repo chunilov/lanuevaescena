@@ -194,19 +194,85 @@ const nominadosData = [
     categoria: "Streamer Nominado"
   },
   {
-    nombre: "Nombre",
+    nombre: "Alexhandra_lip",
     descripcion: "Contenido variado con gran comunidad",
     imagen: "imagenes/streamer_logo.png",
-    canal: "Canal",
+    canal: "https://www.twitch.tv/alexhandra_lip",
     categoria: "Streamer Nominado"
   },
   {
-    nombre: "Nombre",
+    nombre: "DrNiCoH",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/drnicoh",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "nikxo_87",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/nikxo_87",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "daniellefr_",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/daniellefr_",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "chancine",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/chancine",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "Luisini7a",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/luisini7a",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "NonitaMila",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/nonitamila",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "NonitaMila",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/nonitamila",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "NonitaMila",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/nonitamila",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "NonitaMila",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/nonitamila",
+    categoria: "Streamer Nominado"
+  },
+
+  {
+    nombre: "nombre",
     descripcion: "Contenido variado con gran comunidad",
     imagen: "imagenes/streamer_logo.png",
     canal: "Canal",
     categoria: "Streamer Nominado"
   },
+
+  
 
 
 
