@@ -23,28 +23,28 @@ const nominadosData = [
     descripcion: "Contenido variado con gran comunidad",
     imagen: "imagenes/ix_claris_xi-logo.webp",
     canal: "https://www.twitch.tv/ix_claris_xi",
-    categoria: "Mejor Comunidad"
+    categoria: "Streamer Nominado"
   },
   {
     nombre: "Eberdanza",
     descripcion: "Referente del under gaming",
     imagen: "imagenes/eber-logo.png",
     canal: "https://www.twitch.tv/eberdanza",
-    categoria: "Mejor Comunidad"
+    categoria: "Streamer Nominado"
   },
   {
     nombre: "Elbasurero",
     descripcion: "Contenido variado con gran comunidad",
     imagen: "imagenes/elbasurero-logo.jpg",
     canal: "https://www.twitch.tv/elbasurerochido",
-    categoria: "Mejor Comunidad"
+    categoria: "Streamer Nominado"
   },
   {
     nombre: "Goikorol",
     descripcion: "Referente del under gaming",
     imagen: "imagenes/goikorol-logo.png",
     canal: "https://www.twitch.tv/goikorol",
-    categoria: "Mejor Comunidad"
+    categoria: "Streamer Nominado"
   }
 ];
 
