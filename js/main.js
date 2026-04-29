@@ -45,7 +45,93 @@ const nominadosData = [
     imagen: "imagenes/goikorol-logo.png",
     canal: "https://www.twitch.tv/goikorol",
     categoria: "Streamer Nominado"
-  }
+  },
+  {
+    nombre: "Willybong",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/willybong",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "Kenalia",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/kenalia",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "Saitam18",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/saitam18",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "Malefilmica",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/malefilmica",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "Nachodigiorgio",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/nachodigiorgio",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "Elexo17",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/elexo17",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "iThevolta",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/ithevolta",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "Nombre",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "Canal",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "Nombre",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "Canal",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "Nombre",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "Canal",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "Nombre",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "Canal",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "Nombre",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "Canal",
+    categoria: "Streamer Nominado"
+  },
+
+
 ];
 
 
