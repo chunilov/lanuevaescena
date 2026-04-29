@@ -159,6 +159,34 @@ const nominadosData = [
     categoria: "Streamer Nominado"
   },
   {
+    nombre: "Lep1511",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/lep1511",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "MohamedZone",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/mohamedzone",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "YoruEsTanKawaii",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/yoruestankawaii",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "Nombre",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "Canal",
+    categoria: "Streamer Nominado"
+  },
+  {
     nombre: "Nombre",
     descripcion: "Contenido variado con gran comunidad",
     imagen: "imagenes/streamer_logo.png",
