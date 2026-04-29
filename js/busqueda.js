@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nombre.includes(texto) ||
         categoria.includes(texto);
 
-      nom.style.display = coincide ? "block" : "none";
+      nom.style.display = coincide ? "" : "none";
     });
   });
 });
