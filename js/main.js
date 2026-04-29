@@ -206,7 +206,11 @@ function loadNominados(categoria = null) {
 
   ordenados.forEach(nom => {
     const card = document.createElement("div");
-    card.classList.add("card");
+    card.classList.add("card", "nominado");
+
+    // 🔥 CLAVE PARA EL BUSCADOR
+    card.dataset.nombre = nom.nombre.toLowerCase();
+    card.dataset.categoria = nom.categoria.toLowerCase();
 
     card.innerHTML = `
       <img src="${nom.imagen}" class="card-img">

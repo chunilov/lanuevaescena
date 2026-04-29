@@ -6,24 +6,17 @@ document.addEventListener("DOMContentLoaded", () => {
   input.addEventListener("input", () => {
     const texto = input.value.toLowerCase();
 
-    const contenedor = document.getElementById("nominados");
+    const nominados = document.querySelectorAll(".nominado");
 
-nominadosData.forEach(n => {
-  const div = document.createElement("div");
+    nominados.forEach(nom => {
+      const nombre = nom.dataset.nombre || "";
+      const categoria = nom.dataset.categoria || "";
 
-  div.classList.add("nominado");
+      const coincide =
+        nombre.includes(texto) ||
+        categoria.includes(texto);
 
-  // 🔥 ESTO ES LO QUE FALTABA
-  div.dataset.nombre = n.nombre;
-  div.dataset.categoria = n.categoria;
-
-  div.innerHTML = `
-    <img src="${n.imagen}" alt="${n.nombre}">
-    <h3>${n.nombre}</h3>
-    <p>${n.categoria}</p>
-  `;
-
-  contenedor.appendChild(div);
-});
+      nom.style.display = coincide ? "block" : "none";
+    });
   });
 });
