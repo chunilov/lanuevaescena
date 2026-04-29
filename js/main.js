@@ -238,7 +238,7 @@ const nominadosData = [
   {
     nombre: "NonitaMila",
     descripcion: "Contenido variado con gran comunidad",
-    imagen: "imagenes/streamer_logo.png",
+    imagen: "imagenes/streamer_logo.jpg",
     canal: "https://www.twitch.tv/nonitamila",
     categoria: "Streamer Nominado"
   },
