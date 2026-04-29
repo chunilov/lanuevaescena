@@ -140,7 +140,7 @@ const nominadosData = [
   {
     nombre: "KiyoFilms",
     descripcion: "Contenido variado con gran comunidad",
-    imagen: "imagenesKiyoFilms.jpg",
+    imagen: "imagenes/KiyoFilms.jpg",
     canal: "https://www.twitch.tv/kiyofilms",
     categoria: "Streamer Nominado"
   },
