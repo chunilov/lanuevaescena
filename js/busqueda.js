@@ -6,21 +6,24 @@ document.addEventListener("DOMContentLoaded", () => {
   input.addEventListener("input", () => {
     const texto = input.value.toLowerCase();
 
-    const nominados = document.querySelectorAll(".nominado");
+    const contenedor = document.getElementById("nominados");
 
-    nominados.forEach(nom => {
-      const nombre = nom.dataset.nombre?.toLowerCase() || "";
-      const categoria = nom.dataset.categoria?.toLowerCase() || "";
+nominadosData.forEach(n => {
+  const div = document.createElement("div");
 
-      const coincide =
-        nombre.includes(texto) ||
-        categoria.includes(texto);
+  div.classList.add("nominado");
 
-      if (coincide) {
-        nom.style.display = "block";
-      } else {
-        nom.style.display = "none";
-      }
-    });
+  // 🔥 ESTO ES LO QUE FALTABA
+  div.dataset.nombre = n.nombre;
+  div.dataset.categoria = n.categoria;
+
+  div.innerHTML = `
+    <img src="${n.imagen}" alt="${n.nombre}">
+    <h3>${n.nombre}</h3>
+    <p>${n.categoria}</p>
+  `;
+
+  contenedor.appendChild(div);
+});
   });
 });
