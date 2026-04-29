@@ -93,10 +93,11 @@
     }
 
     .card {
-      background: #111;
-      padding: 20px;
-      border-radius: 12px;
-      transition: 0.3s;
+      width: 250px;
+      height: 320px; /* 🔥 CLAVE */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .card:hover {
@@ -162,6 +163,13 @@
 
 .card-content p {
   min-height: 40px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 
