@@ -86,11 +86,11 @@
     }
 
     .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
-      justify-content: center;
-      gap: 20px;
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+    justify-content: center;
+    gap: 20px;
+  }
 
     .card {
       background: #111;
@@ -227,9 +227,7 @@
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 160px));
-    justify-content: center;
-    gap: 15px;
+    grid-template-columns: 1fr;
   }
 
   .card-img {
