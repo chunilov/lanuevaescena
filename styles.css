@@ -227,7 +227,9 @@
   }
 
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 160px));
+    justify-content: center;
+    gap: 15px;
   }
 
   .card-img {
