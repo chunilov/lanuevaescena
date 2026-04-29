@@ -131,6 +131,48 @@ const nominadosData = [
     categoria: "Streamer Nominado"
   },
   {
+    nombre: "RositaBananaOk",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/rositabananaok",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "KiyoFilms",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/kiyofilms",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "TITOANACONDAOFICIAL",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/titoanacondaoficial",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "BambiATR",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/bambiatr",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "Nombre",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "Canal",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "Nombre",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "Canal",
+    categoria: "Streamer Nominado"
+  },
+  {
     nombre: "Nombre",
     descripcion: "Contenido variado con gran comunidad",
     imagen: "imagenes/streamer_logo.png",
@@ -138,6 +180,7 @@ const nominadosData = [
     categoria: "Streamer Nominado"
   },
 
+RositaBananaOk
 
 ];
 
