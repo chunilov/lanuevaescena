@@ -117,10 +117,17 @@ const nominadosData = [
     categoria: "Streamer Nominado"
   },
   {
-    nombre: "Nombre",
+    nombre: "Abri_La__Puerta",
     descripcion: "Contenido variado con gran comunidad",
     imagen: "imagenes/streamer_logo.png",
-    canal: "Canal",
+    canal: "https://www.twitch.tv/abri_la__puerta",
+    categoria: "Streamer Nominado"
+  },
+  {
+    nombre: "LasCintitasdelMiedo",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "https://www.twitch.tv/lascintasdelmiedo",
     categoria: "Streamer Nominado"
   },
   {
