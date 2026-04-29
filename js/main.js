@@ -180,7 +180,6 @@ const nominadosData = [
     categoria: "Streamer Nominado"
   },
 
-RositaBananaOk
 
 ];
 
