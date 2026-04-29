@@ -182,7 +182,7 @@ const nominadosData = [
   {
     nombre: "rome_ni_rome",
     descripcion: "Contenido variado con gran comunidad",
-    imagen: "imagenes/streamer_logo.png",
+    imagen: "imagenes/rome_ni_rome.jpg",
     canal: "https://www.twitch.tv/rome_ni_rome",
     categoria: "Streamer Nominado"
   },
