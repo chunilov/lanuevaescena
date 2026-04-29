@@ -242,13 +242,7 @@ const nominadosData = [
     canal: "https://www.twitch.tv/nonitamila",
     categoria: "Streamer Nominado"
   },
-  {
-    nombre: "Nombre",
-    descripcion: "Contenido variado con gran comunidad",
-    imagen: "imagenes/streamer_logo.png",
-    canal: "https://www.twitch.tv/nonitamila",
-    categoria: "Streamer Nominado"
-  },
+
   
 ];
 
