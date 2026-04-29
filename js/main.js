@@ -155,13 +155,6 @@ const nominadosData = [
     nombre: "BambiATR",
     descripcion: "Contenido variado con gran comunidad",
     imagen: "imagenes/streamer_logo.png",
-    canal: "https://www.twitch.tv/bambiatr",
-    categoria: "Streamer Nominado"
-  },
-  {
-    nombre: "Nombre",
-    descripcion: "Contenido variado con gran comunidad",
-    imagen: "imagenes/streamer_logo.png",
     canal: "Canal",
     categoria: "Streamer Nominado"
   },
@@ -179,6 +172,14 @@ const nominadosData = [
     canal: "Canal",
     categoria: "Streamer Nominado"
   },
+  {
+    nombre: "Nombre",
+    descripcion: "Contenido variado con gran comunidad",
+    imagen: "imagenes/streamer_logo.png",
+    canal: "Canal",
+    categoria: "Streamer Nominado"
+  },
+
 
 
 ];
@@ -242,30 +243,3 @@ function activarCategorias() {
     });
   });
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const input = document.getElementById("inputBusqueda");
-
-  if (!input) return;
-
-  input.addEventListener("input", () => {
-    const texto = input.value.toLowerCase();
-
-    const nominados = document.querySelectorAll(".nominado");
-
-    nominados.forEach(nom => {
-      const nombre = nom.dataset.nombre?.toLowerCase() || "";
-      const categoria = nom.dataset.categoria?.toLowerCase() || "";
-
-      const coincide =
-        nombre.includes(texto) ||
-        categoria.includes(texto);
-
-      if (coincide) {
-        nom.style.display = "block";
-      } else {
-        nom.style.display = "none";
-      }
-    });
-  });
-});
